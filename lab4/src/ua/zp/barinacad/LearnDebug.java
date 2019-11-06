@@ -20,7 +20,7 @@ public class LearnDebug {
               и возле каждого пишет четное это число или нечетное.
         */
         for (int i = 0; i <= 10; i++) {
-            System.out.println("i = " + i + " -> " + ((i%2==0)?"Четное":"Нечетное"));
+            System.out.println("i = " + i + " -> " + ((i % 2 == 0) ? "Четное" : "Нечетное"));
         }
 
         /*
@@ -32,7 +32,7 @@ public class LearnDebug {
         System.out.println("Введите день недели:");
         Scanner scanner = new Scanner(System.in);
         String userInput = scanner.nextLine().trim().toLowerCase();
-        switch (userInput){
+        switch (userInput) {
             case "monday":
             case "tuesday":
             case "wednesday":
@@ -68,15 +68,16 @@ public class LearnDebug {
 
     /**
      * Подсчет факториала числа
+     *
      * @param num
      */
-    static void factorial(int num){
-        int result=1;
+    static void factorial(int num) {
+        int result = 1;
         for (int i = 1; i <= num; i++) {
-            result*=i;
-            if(result<=1000){
+            result *= i;
+            if (result <= 1000) {
                 System.out.println(result);//промежуточный результа
-            }else  {
+            } else {
                 System.out.println("Достигнут максимально возможный результат");
                 break;
             }
@@ -85,11 +86,12 @@ public class LearnDebug {
 
     /**
      * Вывод каждого третьего i-го числа цикла
+     *
      * @param num - максимальное значение
      */
-    static void thirdNum(int num){
-        for (int i = 0; i <= num; i+=3) {
-            if(i>0) { //0 - не выводим
+    static void thirdNum(int num) {
+        for (int i = 0; i <= num; i += 3) {
+            if (i > 0) { //0 - не выводим
                 System.out.println("Third :" + i);
             }
         }
